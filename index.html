@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB211. Николаев. Exam 1</title>
+    <link rel="stylesheet/less" type="text/css" href="css/styles.less" />
+    <script src="js/less.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="dashboard">
+            <div class="container">
+                <header class="row">
+                    <div class="col">
+                        <div class="burger hoverable bg-dark">
+                            <label for="burger">
+                                <svg class="icon">
+                                    <use xlink:href="#burger-icon" />
+                                </svg>
+                            </label>
+                        </div>
+                        <h1>Dashboard</h1>
+                    </div>
+                </header>
+                <div class="row-1">
+                    <div class="col">
+                        <div class="card">
+                            <div class="content">
+                                <div class="icon bg-green">
+                                    <svg>
+                                        <use xlink:href="#data-icon" />
+                                    </svg>
+                                </div>
+                                <p>Used Space</p>
+                                <p>49/50 GB</p>
+                            </div>
+                            <div class="footer">
+                                <div class="icon"><img src="icons/alert.png" alt=""></div>
+                                Get more space...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="content">
+                                <div class="icon bg-orange">
+                                    <svg>
+                                        <use xlink:href="#shop-icon" />
+                                    </svg>
+                                </div>
+                                <p>Revenue</p>
+                                <p>$ 34,245</p>
+                            </div>
+                            <div class="footer">
+                                <div class="icon"><img src="icons/calendar.png" alt=""></div>
+                                Last 24 Hours
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="content">
+                                <div class="icon bg-blue">
+                                    <svg>
+                                        <use xlink:href="#tag-icon" />
+                                    </svg>
+                                </div>
+                                <p>Fixed Issues</p>
+                                <p>75</p>
+                            </div>
+                            <div class="footer">
+                                <div class="icon"><img src="icons/down.png" alt=""></div>
+                                Tracked from Github
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="content">
+                                <div class="icon bg-red">
+                                    <svg>
+                                        <use xlink:href="#paperplane-icon" />
+                                    </svg>
+                                </div>
+                                <p>Followers</p>
+                                <p>+ 245</p>
+                            </div>
+                            <div class="footer">
+                                <div class="icon">
+                                    <img src="icons/time.png" alt="">
+                                </div>
+                                Just updated
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-2">
+                    <div class="col">
+                        <div class="card">
+                            <div class="header bg-green">
+                                <div class="icon">
+                                    <img src="icons/graphics.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h2>Daily Sales</h2>
+                                <p>55% increase in today sales</p>
+                            </div>
+                            <div class="footer">
+                                <div class="icon"><img src="icons/time.png" alt=""></div>
+                                updated 4 minutes ago
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="header bg-orange">
+                                <div class="icon">
+                                    <img src="icons/graphics.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h2>Email Subscriptions</h2>
+                                <p>Last Campaing Performance</p>
+                            </div>
+                            <div class="footer">
+                                <div class="icon"><img src="icons/time.png" alt=""></div>
+                                campaing sent 2 days ago
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="header bg-blue">
+                                <div class="icon">
+                                    <img src="icons/graphics.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h2>Completed Tasks</h2>
+                                <p>Last Campaing Performance</p>
+                            </div>
+                            <div class="footer">
+                                <div class="icon"><img src="icons/time.png" alt=""></div>
+                                campaing sent 2 days ago
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row-3">
+                    <!-- row-3 card-1 -->
+                    <div class="col">
+                        <div class="card">
+                            <div class="header bg-orange p-0">
+                                <div class="tasks">
+                                    <input type="radio" name="tasks_tab" id="bugs_tab" checked>
+                                    <input type="radio" name="tasks_tab" id="website_tab">
+                                    <input type="radio" name="tasks_tab" id="server_tab">
+
+                                    <span>Tasks:</span>
+                                    <label for="bugs_tab" class="bugs_tab hoverable">
+                                        <img src="icons/bug.svg" alt="" class="icon">
+                                        Bugs
+                                    </label>
+                                    <label for="website_tab" class="website_tab hoverable">
+                                        <img src="icons/web.svg" alt="" class="icon">
+                                        Website
+                                    </label>
+                                    <label for="server_tab" class="server_tab hoverable">
+                                        <img src="icons/cloud.svg" alt="" class="icon">
+                                        Server
+                                    </label>
+                                    <div class="content-container">
+                                        <div class="content-box-bugs">
+                                            <table id="bugs-table">
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox" checked>
+                                                    </td>
+                                                    <td>
+                                                        Sign contract for "What are conference organizers afraid of?"
+                                                    </td>
+                                                    <td>
+                                                        <a href="" class="control edit"></a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="" class="control remove"></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox">
+                                                    </td>
+                                                    <td>
+                                                        Lines From Great Russia Literatute? Or E-mails From My Boss?
+                                                    </td>
+                                                    <td>
+                                                        <a href="" class="control edit"></a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="" class="control remove"></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox">
+                                                    </td>
+                                                    <td>
+                                                        Sign contract for "What are conference organizers afraid of?"
+                                                    </td>
+                                                    <td>
+                                                        <a href="" class="control edit"></a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="" class="control remove"></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input type="checkbox" checked>
+                                                    </td>
+                                                    <td>
+                                                        Sign contract for "What are conference organizers afraid of?"
+                                                    </td>
+                                                    <td>
+                                                        <a href="" class="control edit"></a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="" class="control remove"></a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="content-box-website">
+                                            <h1>Здесь могла быть ваша реклама :)</h1>
+                                        </div>
+                                        <div class="content-box-server">
+                                            <h1>И тут тоже :)</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- row-3 card-2 -->
+                    <div class="col">
+                        <div class="card">
+                            <div class="header bg-blue text-white">
+                                <h3>Employees Stats</h3>
+                                <p>New employees on 19th September, 2019</p>
+                            </div>
+                            <div class="content">
+                                <table id="stats-table">
+                                    <tr>
+                                        <th>
+                                            ID
+                                        </th>
+                                        <th>
+                                            Name
+                                        </th>
+                                        <th>
+                                            Salary
+                                        </th>
+                                        <th>
+                                            Country
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            1
+                                        </td>
+                                        <td>
+                                            Dakota Rice
+                                        </td>
+                                        <td>
+                                            $36.738
+                                        </td>
+                                        <td>
+                                            Niger
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            1
+                                        </td>
+                                        <td>
+                                            Dakota Rice
+                                        </td>
+                                        <td>
+                                            $36.738
+                                        </td>
+                                        <td>
+                                            Niger
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            1
+                                        </td>
+                                        <td>
+                                            Dakota Rice
+                                        </td>
+                                        <td>
+                                            $36.738
+                                        </td>
+                                        <td>
+                                            Niger
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            1
+                                        </td>
+                                        <td>
+                                            Dakota Rice
+                                        </td>
+                                        <td>
+                                            $36.738
+                                        </td>
+                                        <td>
+                                            Niger
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="row">
+                    <ul class="col">
+                        <li class="hoverable"><a href="#">About</a></li>
+                        <li class="hoverable"><a href="#">Blog</a></li>
+                        <li class="hoverable"><a href="#">Licenses</a></li>
+                        <li><span>Made By: WEB221. Николаев Д.О &#128053;</span></li>
+                    </ul>
+                </footer>
+            </div>
+        </main>
+    </div>
+
+
+    <input type="checkbox" id="burger" class="layout_control">
+    <aside>
+        <div class="panel bg-light">
+            <div class="header">
+                <h1>Company</h1>
+            </div>
+            <nav>
+                <ul class="bg-light">
+                    <li class="active">
+                        <a href="#">
+                            <svg class="icon">
+                                <use xlink:href="#dashboard-icon" />
+                            </svg>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="userprofile.html">
+                            <svg class="icon">
+                                <use xlink:href="#account-icon" />
+                            </svg>
+                            User Profile
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <svg class="icon">
+                                <use xlink:href="#map-icon" />
+                            </svg>
+                            Maps
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <svg class="icon">
+                                <use xlink:href="#notification-icon" />
+                            </svg>
+                            Notification
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <svg class="icon">
+                                <use xlink:href="#web-icon" />
+                            </svg>
+                            Support
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <label for="burger" class="aside-overlay">
+
+        </label>
+    </aside>
+    </div>
+
+    <!-- собственный pixcel perfect:) -->
+    <input type="checkbox" id="layout_z-index" class="layout_control">
+    <input type="radio" id="layout_opacity_10" name="layout_opacity" class="layout_control" checked>
+    <input type="radio" id="layout_opacity_08" name="layout_opacity" class="layout_control">
+    <input type="radio" id="layout_opacity_00" name="layout_opacity" class="layout_control">
+    <input type="radio" id="layout_image_1" name="layout_img" class="layout_control" checked>
+    <input type="radio" id="layout_image_2" name="layout_img" class="layout_control">
+    <input type="radio" id="layout_image_3" name="layout_img" class="layout_control">
+    <input type="radio" id="layout_image_0" name="layout_img" class="layout_control">
+    <div class="layout">
+
+        <img src="layout 1/1.1.png" alt="" class="img_1" style="">
+        <img src="layout 1/1.2.png" alt="" class="img_2" style="transform: scale(0.77); transform-origin: top center;">
+        <img src="layout 1/1.3.png" alt="" class="img_3" style="transform: scale(0.68); transform-origin: top center;">
+    </div>
+    <nav>
+        <span>LAYOUT:</span>
+        <label class="layout_z-index" for="layout_z-index"> on top</label>
+        <span>OPACITY:</span>
+        <label class="layout_opacity_00" for="layout_opacity_00">0.0</label>
+        <label class="layout_opacity_08" for="layout_opacity_08">0.8</label>
+        <label class="layout_opacity_10" for="layout_opacity_10">1.0</label>
+        <span>IMAGES:</span>
+        <label class="layout_image_1" for="layout_image_1">1</label>
+        <label class="layout_image_2" for="layout_image_2">2</label>
+        <label class="layout_image_3" for="layout_image_3">3</label>
+        <label class="layout_image_0" for="layout_image_0">off</label>
+    </nav>
+    <!-- svg-icons -->
+    <section class="icons">
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <symbol id="dashboard-icon" viewBox="0 0 48 48">
+                <title>dashboard-icon</title>
+                <path fill="none" d="M0 0h48v48h-48z" />
+                <path fill="var(--svg-color)"
+                    d="M6 26h16v-20h-16v20zm0 16h16v-12h-16v12zm20 0h16v-20h-16v20zm0-36v12h16v-12h-16z" />
+            </symbol>
+        </svg>
+        <!-- account-icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <symbol id="account-icon" viewBox="0 0 48 48">
+                <title>account-icon</title>
+                <path fill="var(--svg-color)"
+                    d="M24 8c-4.42 0-8 3.58-8 8 0 4.41 3.58 8 8 8s8-3.59 8-8c0-4.42-3.58-8-8-8zm0 20c-5.33 0-16 2.67-16 8v4h32v-4c0-5.33-10.67-8-16-8z" />
+                <path d="M0 0h48v48h-48z" fill="none" />
+            </symbol>
+        </svg>
+        <!-- map-icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <symbol id="map-icon" viewBox="0 0 48 48">
+                <title>map-icon</title>
+                <path fill="var(--svg-color)"
+                    d="M24 4c-7.73 0-14 6.27-14 14 0 10.5 14 26 14 26s14-15.5 14-26c0-7.73-6.27-14-14-14zm0 19c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z" />
+                <path d="M0 0h48v48h-48z" fill="none" />
+            </symbol>
+        </svg>
+        <!-- notification-icon" -->
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <symbol id="notification-icon" viewBox="0 0 48 48">
+                <title>notification-icon</title>
+                <path fill="var(--svg-color)"
+                    d="M36 14l-2.83-2.83-12.68 12.69 2.83 2.83 12.68-12.69zm8.49-2.83l-21.18 21.17-8.34-8.34-2.83 2.83 11.17 11.17 24-24-2.82-2.83zm-43.66 15.66l11.17 11.17 2.83-2.83-11.17-11.17-2.83 2.83z" />
+                <path d="M0 0h48v48h-48z" fill="none" />
+            </symbol>
+        </svg>
+        <!-- web-icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <symbol id="web-icon" viewBox="0 0 48 48">
+                <title>web-icon</title>
+                <path fill="var(--svg-color)"
+                    d="M23.99 4c-11.05 0-19.99 8.95-19.99 20s8.94 20 19.99 20c11.05 0 20.01-8.95 20.01-20s-8.96-20-20.01-20zm13.85 12h-5.9c-.65-2.5-1.56-4.9-2.76-7.12 3.68 1.26 6.74 3.81 8.66 7.12zm-13.84-7.93c1.67 2.4 2.97 5.07 3.82 7.93h-7.64c.85-2.86 2.15-5.53 3.82-7.93zm-15.48 19.93c-.33-1.28-.52-2.62-.52-4s.19-2.72.52-4h6.75c-.16 1.31-.27 2.64-.27 4 0 1.36.11 2.69.28 4h-6.76zm1.63 4h5.9c.65 2.5 1.56 4.9 2.76 7.13-3.68-1.26-6.74-3.82-8.66-7.13zm5.9-16h-5.9c1.92-3.31 4.98-5.87 8.66-7.13-1.2 2.23-2.11 4.63-2.76 7.13zm7.95 23.93c-1.66-2.4-2.96-5.07-3.82-7.93h7.64c-.86 2.86-2.16 5.53-3.82 7.93zm4.68-11.93h-9.36c-.19-1.31-.32-2.64-.32-4 0-1.36.13-2.69.32-4h9.36c.19 1.31.32 2.64.32 4 0 1.36-.13 2.69-.32 4zm.51 11.12c1.2-2.23 2.11-4.62 2.76-7.12h5.9c-1.93 3.31-4.99 5.86-8.66 7.12zm3.53-11.12c.16-1.31.28-2.64.28-4 0-1.36-.11-2.69-.28-4h6.75c.33 1.28.53 2.62.53 4s-.19 2.72-.53 4h-6.75z" />
+                <path d="M0 0h48v48h-48z" fill="none" />
+            </symbol>
+        </svg>
+        <!-- burger-icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <symbol id="burger-icon" viewBox="0 0 48 48" fill="var(--color)">
+                <title>burger-icon</title>
+                <rect y="7" width="48" height="8" />
+                <rect y="20" width="48" height="8" />
+                <rect y="33" width="48" height="8" />
+            </symbol>
+        </svg>
+        <!-- data -->
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <symbol id="data-icon" viewBox="0 0 32 32">
+                <title>data-icon</title>
+                <!-- fill="var(--svg-color)" -->
+                <path
+                    d="M16,0C9.256,0,2,2.033,2,6.5v19C2,29.965,9.256,32,16,32c6.743,0,14-2.035,14-6.5v-19   C30,2.033,22.742,0,16,0z M28,25.5c0,2.484-5.373,4.5-12,4.5c-6.628,0-12-2.016-12-4.5v-3.736C6.066,23.893,11.05,25,16,25   c4.95,0,9.934-1.107,12-3.236V25.5z M28,19.5h-0.004c0,0.01,0.004,0.021,0.004,0.031C28,22,22.627,24,16,24c-6.627,0-12-2-12-4.469   c0-0.01,0.004-0.021,0.004-0.031H4v-3.736C6.066,17.893,11.05,19,16,19c4.95,0,9.934-1.107,12-3.236V19.5z M28,13.5h-0.004   c0,0.01,0.004,0.021,0.004,0.031C28,16,22.627,18,16,18c-6.627,0-12-2-12-4.469c0-0.01,0.004-0.021,0.004-0.031H4v-3.436   C6.621,12.061,11.425,13,16,13c4.575,0,9.379-0.939,12-2.936V13.5z M16,11C9.372,11,4,8.984,4,6.5C4,4.014,9.372,2,16,2   c6.627,0,12,2.014,12,4.5C28,8.984,22.627,11,16,11z"
+                    fill="whitesmoke" />
+                <circle cx="25" cy="26" fill="whitesmoke" r="1" />
+                <circle cx="25" cy="20" fill="whitesmoke" r="1" />
+                <circle cx="25" cy="14" fill="whitesmoke" r="1" />
+            </symbol>
+        </svg>
+        <!-- shop -->
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <symbol id="shop-icon" viewBox="0 0 32 32">
+                <title>shop-icon</title>
+                <!-- fill="var(--svg-color)" -->
+                <path
+                    d="M31.4,11.2l-3-3.998c-0.117-0.157-0.256-0.293-0.4-0.423V2c0-1.104-0.896-2-2-2H6  C4.895,0,4,0.896,4,2v4.78C3.856,6.909,3.717,7.044,3.6,7.2l-2.999,3.999C0.213,11.715,0,12.354,0,13v1c0,1.654,1.346,3,3,3h0v13  c0,1.104,0.896,2,2,2h22c1.104,0,2-0.896,2-2V17l0,0c1.654,0,3-1.346,3-3v-1C32,12.354,31.787,11.715,31.4,11.2z M26,2v4H6h0V2H26z   M10.193,15H6.004l4-7h2.189L10.193,15z M13.234,8H15.5v7h-4.266L13.234,8z M16.5,8h2.266l2,7H16.5V8z M19.805,8h2.189l4,7h-4.189  L19.805,8z M2,14v-1c0-0.217,0.07-0.427,0.2-0.6l3-4C5.389,8.148,5.685,8,6,8h2.852l-4,7H3C2.448,15,2,14.553,2,14z M20,30h-7.5V20  H20V30z M27,30h-6V20c0-0.553-0.449-1-1-1h-7.5c-0.552,0-1,0.447-1,1v10H5V17h22V30z M30,14c0,0.553-0.447,1-1,1h-1.854l-4-7H26l0,0  c0.314,0,0.611,0.148,0.799,0.4l3,4C29.93,12.573,30,12.783,30,13V14z"
+                    fill="whitesmoke" id="shop_1_" />
+            </symbol>
+        </svg>
+        <!-- tag -->
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <symbol id="tag-icon" viewBox="0 0 32 32">
+                <title>tag-icon</title>
+                <!-- fill="var(--svg-color)" -->
+                <path clip-rule="evenodd"
+                    d="M31.391,13.883l-5-8c-0.73-1.169-2.012-1.88-3.391-1.88H4   c-2.209,0-4,1.791-4,4v16c0,2.209,1.791,4,4,4h19c1.379,0,2.66-0.711,3.391-1.881l5-8C32.203,16.827,32.203,15.18,31.391,13.883z    M29.695,17.062l-5,8.002c-0.367,0.588-1.002,0.939-1.695,0.939H4c-1.103,0-2-0.898-2-2v-16c0-1.103,0.897-2,2-2h19   c0.693,0,1.328,0.352,1.695,0.939l5,8C30.098,15.587,30.098,16.419,29.695,17.062z"
+                    fill="whitesmoke" fill-rule="evenodd" />
+                <path clip-rule="evenodd"
+                    d="M23,13.003c-1.658,0-3,1.343-3,3c0,1.657,1.342,3,3,3   c1.656,0,3-1.344,3-3C26,14.346,24.656,13.003,23,13.003z M23,18.004c-1.105,0-2-0.896-2-2c0-1.104,0.895-2,2-2   c1.104,0,2,0.896,2,2C25,17.107,24.104,18.004,23,18.004z"
+                    fill="whitesmoke" fill-rule="evenodd" />
+            </symbol>
+        </svg>
+        <!-- paperplane -->
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <symbol id="paperplane-icon" viewBox="0 0 32 32">
+                <title>paperplane-icon</title>
+                <!-- fill="var(--svg-color)" -->
+                <path
+                    d="M31.543,0.16C31.377,0.053,31.188,0,31,0c-0.193,0-0.387,0.055-0.555,0.168l-30,20  c-0.309,0.205-0.479,0.566-0.439,0.936c0.038,0.369,0.278,0.688,0.623,0.824l7.824,3.131l3.679,6.438  c0.176,0.309,0.503,0.5,0.857,0.504c0.004,0,0.007,0,0.011,0c0.351,0,0.677-0.186,0.857-0.486l2.077-3.463l9.695,3.877  C25.748,31.977,25.873,32,26,32c0.17,0,0.338-0.043,0.49-0.129c0.264-0.148,0.445-0.408,0.496-0.707l5-30  C32.051,0.771,31.877,0.377,31.543,0.16z M3.136,20.777L26.311,5.326L9.461,23.363c-0.089-0.053-0.168-0.123-0.266-0.162  L3.136,20.777z M10.189,24.066c-0.002-0.004-0.005-0.006-0.007-0.01L29.125,3.781L12.976,28.943L10.189,24.066z M25.217,29.609  l-8.541-3.416c-0.203-0.08-0.414-0.107-0.623-0.119L29.205,5.686L25.217,29.609z"
+                    fill="whitesmoke" id="paperplane" />
+            </symbol>
+        </svg>
+    </section>
+</body>
+
+</html>
